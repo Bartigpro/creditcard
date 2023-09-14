@@ -25,8 +25,10 @@ body{
     grid-area: meni;
     background-color: antiquewhite;
 }
-#karta{
-    color: rgb(255, 45, 45);
+
+#tilt {
+    background-image: url(th.jfif);
+    color: rgb(255, 255, 255);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,4 +36,50 @@ body{
     background-color: rgb(54, 54, 54);
     height: 300px;
     width: 500px;
-}
+    display: block;
+    
+    background-color: grey;
+    margin: 0;
+    transition: box-shadow 0.1s, transform 0.1s;
+    
+    /*
+      * Adding image to the background
+      * No relation to the hover effect.
+      */
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 
+    40vh 
+    30vh 
+    30vh;
+    grid-template-areas: 
+    "imge imge"
+    "number number"
+    "name date"
+    ;
+  }
+  
+  #tilt:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    cursor: pointer;
+  }
+  img{
+    width: 100px;
+    height: 50px;
+  }
+
+  #imge{
+    grid-area: imge;
+    height: auto;
+    width: 50px;
+  }
+  #NO{
+    grid-area: number;
+  }
+  #name{}
+  #data{}
+  

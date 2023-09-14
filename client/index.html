@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="card">
-        <div id="karta">
-            <img id="zdj">
+        <div id="tilt">
+           
             <h1 id="NO"></h1>
             <h1 id="name"></h1>
             <h1 id="data"></h1>
@@ -18,15 +18,15 @@
     </div>
     <div id="meni">
         <button onclick="date()"></button>
-        <input type="text" placeholder="numer karty" id="nmb" maxlength="19" onkeyup="">
+        <input type="text" placeholder="numer karty" id="nmb" maxlength="13" onkeyup="zamiennumer()">
         <input type="text" placeholder="imię i nazwisko" id="surn" onkeyup="nazw()">
         <input type="date" placeholder="data" id="dates" onchange="date()">
         <input type="radio" id="1" name="image" value="1" onchange="img(id)">
-        <label for="1">1</label>
+        <label for="1"><img src="R.jfif" alt=""></label>
         <input type="radio" id="2" name="image" value="2" onchange="img(id)">
-        <label for="2">2</label>
+        <label for="2"><img src="th.jfif" alt=""></label>
         <input type="radio" id="3" name="image" value="3" onchange="img(id)">
-        <label for="3">3</label>
+        <label for="3"><img src="pobierz.jfif" alt=""></label>
     </div>
 </body>
 <script src="app.js"></script>
