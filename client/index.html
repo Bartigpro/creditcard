@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+    <div id="card">
+        <div id="karta">
+            <img id="zdj">
+            <h1 id="NO"></h1>
+            <h1 id="name"></h1>
+            <h1 id="data"></h1>
+        </div>
+    </div>
+    <div id="meni">
+        <button onclick="date()"></button>
+        <input type="text" placeholder="numer karty" id="nmb" maxlength="19" onkeyup="">
+        <input type="text" placeholder="imię i nazwisko" id="surn" onkeyup="nazw()">
+        <input type="date" placeholder="data" id="dates" onchange="date()">
+        <input type="radio" id="1" name="image" value="1" onchange="img(id)">
+        <label for="1">1</label>
+        <input type="radio" id="2" name="image" value="2" onchange="img(id)">
+        <label for="2">2</label>
+        <input type="radio" id="3" name="image" value="3" onchange="img(id)">
+        <label for="3">3</label>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
